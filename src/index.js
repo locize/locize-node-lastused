@@ -91,7 +91,6 @@ const locizeLastUsed = {
       };
 
       if (keys.length) {
-        (url, callback, data)
         ajax(reqOptions, () => { doneOne(); }, keys);
       } else {
         doneOne();

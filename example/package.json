@@ -1,10 +1,11 @@
 {
-  "name": "i18next-node-locize-backend-example",
+  "name": "locize-node-lastused-example",
   "version": "0.0.0",
   "description": "just a sample",
   "main": "./index.js",
   "dependencies": {
-    "i18next": "^11.3.3"
+    "i18next": "^11.3.3",
+    "i18next-node-locize-backend": "^2.4.1"
   },
   "devDependencies": {},
   "scripts": {},

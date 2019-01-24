@@ -1,5 +1,6 @@
 const i18next = require('i18next');
-const LocizeBackend = require('../lib/index.js').default;
+const LocizeBackend = require('i18next-node-locize-backend');
+const LocizeLastUsed = require('../lib/index.js').default;
 // const LocizeBackend = require('../lib/index.js').default;
 
 const yourOptions = {
@@ -9,30 +10,24 @@ const yourOptions = {
   fallbackLng: 'en',
   backend: {
     referenceLng: 'en',
-    projectId: '49fb5220-dfc0-47bb-987c-b737524d76af',
-    apiKey: '3dc91839-ca3e-440d-a1a3-ce52ebfd12e3',
+    projectId: 'c55b9812-f5d2-4856-adba-c750afc82bb3',
+    apiKey: '51837bfd-ed1f-4ed4-afb6-dd3049f6ee7f',
 		// version: 'staging',
     // loadPath: 'https://api.locize.io/2596e805-2ce2-4e21-9481-ee62202ababd/{{version}}/{{lng}}/{{ns}}',
     // addPath: 'https://api.locize.io/missing/2596e805-2ce2-4e21-9481-ee62202ababd/{{version}}/{{lng}}/{{ns}}'
+  },
+  locizeLastUsed: {
+    referenceLng: 'en',
+    projectId: 'c55b9812-f5d2-4856-adba-c750afc82bb3',
+    apiKey: '51837bfd-ed1f-4ed4-afb6-dd3049f6ee7f',
   }
 };
 
 i18next.use(LocizeBackend);
+i18next.use(LocizeLastUsed);
 i18next.init(yourOptions);
 
-
-// const backend = new LocizeBackend({
-//   projectId: '2596e805-2ce2-4e21-9481-ee62202ababd',
-//   apiKey: '3f608f6f-7b4a-4d7f-8374-13dcd31ecf86',
-//   // version: 'staging',
-//   // referenceLng -> not needed as will be loaded from API
-// }, (err, opts) => {
-//   console.log(opts);
-//   i18next
-//     .use(backend)
-//     .init({ ...opts, ...yourOptions}); // yourOptions should not include backendOptions!
-// });
-
-setInterval(function () {
-  console.log(i18next.t('translation:All', { lng: 'en' }))
-}, 15000);
+setTimeout(() => {
+  console.log(i18next.t('translation:key1', { lng: 'en' }))
+  console.log(i18next.t('translation:key2', { lng: 'en' }))
+}, 5000);
