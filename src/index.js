@@ -35,6 +35,12 @@ const locizeLastUsed = {
     this.submitting = null;
     this.pending = {};
     this.done = {};
+    
+    if (!this.options.projectId || this.options.projectId === 'projectid' || this.options.projectId === 'projectId') {
+      const err = new Error('projectId is not valid');
+      console.error(err);
+      throw err;
+    }
 
     this.submit = utils.debounce(this.submit, this.options.debounceSubmit);
 
