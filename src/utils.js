@@ -22,3 +22,19 @@ export function replaceIn(str, arr, options) {
 
 	return ret;
 }
+
+export function isMissingOption(obj, props) {
+  return props.reduce((mem, p) => {
+    if (mem) return mem;
+    if (!obj || !obj[p] || typeof obj[p] !== 'string' || !obj[p].toLowerCase() === p.toLowerCase()) {
+      const err = `i18next-locize-backend :: got "${obj[p]}" in options for ${p} which is invalid.`;
+      console.warn(err);
+      return err;
+    }
+    return false;
+  }, false)
+}
+
+export function optionExist(obj, props) {
+  return !isMissingOption(obj, props);
+}
