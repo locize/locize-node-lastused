@@ -1,6 +1,6 @@
 {
   "name": "locize-node-lastused",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Using API lastUsed from serverside",
   "main": "./index.js",
   "keywords": [

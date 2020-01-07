@@ -1,4 +1,8 @@
 
+### 2.0.0
+
+- using the new `locize.app` domain replacing the deprecated `locize.io` domain
+
 ### 1.0.0
 
 - warn for missing options

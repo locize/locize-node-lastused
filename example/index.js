@@ -13,8 +13,8 @@ const yourOptions = {
     projectId: 'c55b9812-f5d2-4856-adba-c750afc82bb3',
     apiKey: '51837bfd-ed1f-4ed4-afb6-dd3049f6ee7f',
 		// version: 'staging',
-    // loadPath: 'https://api.locize.io/2596e805-2ce2-4e21-9481-ee62202ababd/{{version}}/{{lng}}/{{ns}}',
-    // addPath: 'https://api.locize.io/missing/2596e805-2ce2-4e21-9481-ee62202ababd/{{version}}/{{lng}}/{{ns}}'
+    // loadPath: 'https://api.locize.app/2596e805-2ce2-4e21-9481-ee62202ababd/{{version}}/{{lng}}/{{ns}}',
+    // addPath: 'https://api.locize.app/missing/2596e805-2ce2-4e21-9481-ee62202ababd/{{version}}/{{lng}}/{{ns}}'
   },
   locizeLastUsed: {
     referenceLng: 'en',
