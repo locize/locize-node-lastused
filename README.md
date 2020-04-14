@@ -1,3 +1,10 @@
+# DEPRECATED
+
+Can be replaced with: [locize-lastused](https://github.com/locize/locize-lastused)
+
+---
+
+
 [![Travis](https://img.shields.io/travis/locize/locize-node-lastused/master.svg?style=flat-square)](https://travis-ci.org/locize/locize-node-lastused)
 [![npm version](https://img.shields.io/npm/v/locize-node-lastused.svg?style=flat-square)](https://www.npmjs.com/package/locize-node-lastused)
 [![David](https://img.shields.io/david/locize/locize-node-lastused.svg?style=flat-square)](https://david-dm.org/locize/locize-node-lastused)
